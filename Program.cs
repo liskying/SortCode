@@ -19,8 +19,9 @@ namespace SortCode
             //Console.WriteLine("简单选择排序法");
             //insertSort.Demo(a,insertSort.SimpleSelectionSort);
 
-            Console.WriteLine("二元选择排序法");
-            insertSort.Demo(a,insertSort.TwoElenSelectSort);
+            //Console.WriteLine("二元选择排序法");
+            //insertSort.Demo(a,insertSort.TwoElenSelectSort);
+            insertSort.CaulMaxSubXulie();
         }
     }
 }

@@ -150,5 +150,41 @@ namespace SortCode
             }
         }
         #endregion
+    
+        public void CaulMaxSubXulie()
+        {
+            int  i, j, len;
+            int[] a=new int[100];
+            int[] b=new int[100];
+            var  iLen=6;
+            a[0]=3;
+            a[1]=10;
+            a[2]=5;
+            a[3]=15;
+            a[4]=6;
+            a[5]=8;
+            Console.WriteLine("n="+iLen);
+
+            for(i=0;i<iLen;i++) {                  
+                Console.WriteLine("a["+i+"]="+a[i]);
+            }
+            b[0]=1;
+            Console.WriteLine("开始");
+            for( i=1;i<iLen;i++) {
+                Console.WriteLine("第["+i+"]轮");
+                Console.WriteLine("a["+i+"]="+a[i]);
+                for(j=0,len=0;j<i;j++) {
+                    Console.WriteLine("b["+j+"]="+b[j]);
+                    if(b[j]<a[i] && len<b[j]) 
+                        len=b[j];
+                }
+                b[j]= len+1;
+            }
+            Console.WriteLine("结束");
+            for(i=0;i<iLen;i++) {                  
+                Console.WriteLine("b["+i+"]="+b[i]);
+            }
+        }
+    
     }
 }

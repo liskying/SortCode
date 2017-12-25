@@ -24,5 +24,7 @@ namespace SortCode
 
         //二元排序法
         void TwoElenSelectSort(int[] array, int iArrayLen);
+
+        void CaulMaxSubXulie();
     }
 }
